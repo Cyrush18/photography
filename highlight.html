@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gallery.css">
+    <title>Highlight</title>
+</head>
+<body>
+        <!-- Header -->
+        <header>
+            <!-- cyrush photography logo -->
+            <a href="#" class="logo"><span>C</span>yrush Pradhan</a>
+    
+        <!-- Navigation -->
+        <ul class="links">
+            <li><a href="Index.html" >Home</a></li>
+            <li><a href="gallery.html">My Work</a></li>
+            <li><a href="highlight.html" class="active">Highlight</a></li>
+            <li><a href="chat.html">Let's Chat</a></li>
+          
+        </ul>
+    
+    </header>
+   
+    <!-- video body part -->
+    <div class="main-video-body">  
+            <h1>Videos Highlight</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="feature-img">
+                            <img src="image/neva.jpg" alt="highlight image" width="100%">
+                            <img src="image/play.png" alt="" class="play-btn" onclick="playVideo('video/nevapromo.mp4')">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="image/school.JPG" alt="school" class="smallimg" >
+                                <img src="image/play.png" alt="" class="play-btn" onclick="playVideo('video/school.mp4')">
+                            </div>
+                            <p>A Short vidoe of school promotion</p>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="image/gun.jpg" alt="cinematic" class="smallimg">
+                                <img src="image/play.png" alt="" class="play-btn" onclick="playVideo('video/cinematic.mp4')">
+                            </div>
+                            <p>Video of Bartaman & Gunyo Cholo Ceremony</p>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="image/nani.JPG" alt="short" class="smallimg">
+                                <img src="image/play.png" alt="" class="play-btn"  onclick="playVideo('video/short.mp4')">
+                            </div>
+                            <p>Cinematic video of Small kid</p>
+                        </div>
+                    </div>
+         
+                </div>
+    </div>
+      <!-- footer -->
+      <footer>
+        <p>Copyright © Cyrush Pradhan 2023</p>
+     </footer>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="video/nevapromo.mp4" type="video/mp4">
+        </video>
+        <img src="image/cross.png" alt="" class="close-btn" onclick="stopVideo()">
+    </div>
+    <!-- video popup -->
+    <script src="js/highlight.js">
+      
+    </script>
+
+
+   
+
+    
+</body>
+</html>
